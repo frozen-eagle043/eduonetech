@@ -29,7 +29,7 @@ export default function Login() {
   return (
     <>
       <div className="wrapper">
-        <div class="logo"> <img src="https://sm.ign.com/ign_in/feature/k/kang-the-c/kang-the-conqueror-explained-who-is-the-rumored-villain-of-a_p7uu.jpg" alt=""/> </div>
+        
           <h2 className="text-center mt-4 name">Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form className = "p-3 mt-3" onSubmit={handleSubmit}>
