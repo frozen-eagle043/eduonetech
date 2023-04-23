@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import CalendarHeatmap from 'react-calendar-heatmap';
 import 'react-calendar-heatmap/dist/styles.css';
-
+import Navbar from './Navbar';
 function Profile() {
   const [lastLogin, setLastLogin] = useState(null);
 
@@ -37,6 +37,7 @@ function Profile() {
 
   return (
     <div className="container">
+      <Navbar/>
       <div className="profile">
         <img
           className="avatar"
