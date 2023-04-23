@@ -1,125 +1,108 @@
-Global Styles
+/* Reset default styles for all elements */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Profile Section */
-  .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .avatar {
-    width: 15%;
-    height: 15%;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .username {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .bio {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .stats {
-    list-style: none;
-    display: flex;
-  }
-  
-  .stats li {
-    margin-right: 20px;
-    font-size: 18px;
-  }
-  
-  .stats strong {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* About Me Section */
-  .about-me {
-    margin-bottom: 30px;
-  }
-  
-  /* Heatmap Section */
-  .heatmap-container {
-    position: relative;
-  }
-  
-  .color-empty {
-    fill: #ebedf0;
-  }
-  
-  .color-github-1 {
-    fill: #9be9a8;
-  }
-  
-  .color-github-2 {
-    fill: #40c463;
-  }
-  
-  .color-github-3 {
-    fill: #30a14e;
-  }
-  
-  .color-github-4 {
-    fill: #216e39;
-  }
-  
-  /* Tooltip Styles */
-  .react-calendar-heatmap .color-filled:hover {
-    stroke: #555;
-    stroke-width: 2px;
-  }
-  
-  .react-calendar-heatmap .react-tooltip {
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  .react-calendar-heatmap .react-tooltip.show {
-    opacity: 0.9;
-    z-index: 9999;
-  }
-  
-  .react-calendar-heatmap .react-tooltip strong {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size and color */
+html {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Set font family for all elements */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Style main content area */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Style buttons */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

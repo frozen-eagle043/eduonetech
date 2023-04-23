@@ -33,11 +33,13 @@ const Navbar = () => {
       });
   };
 
-  const handleAddFriend = (userId) => {
+  const handleAddFriend = (email,userId) => {
     const db = firebase.firestore();
     const currentUserRef = db.collection('users').doc(currentUser.uid);
     const friendRef = currentUserRef.collection('friends').doc(userId);
-    friendRef.set({})
+    friendRef.set({
+        email: email
+    })
       .then(() => {
         console.log('Friend added successfully!');
       })
@@ -74,7 +76,7 @@ const Navbar = () => {
           <ul>
             {searchResults.map((result) => (
               <li key={result.id}>
-                {result.email} <button onClick={() => handleAddFriend(result.id)}>Add friend</button>
+                {result.email} <button onClick={() => handleAddFriend(result.email,result.id)}>Add friend</button>
               </li>
             ))}
           </ul>

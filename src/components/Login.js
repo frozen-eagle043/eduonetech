@@ -23,7 +23,7 @@ export default function Login() {
       const userId = app.auth().currentUser.uid;
       //const LoginDate = new Date();
       const db = app.firestore()
-      db.collection("users").doc(userId).set({
+      db.collection("user").doc(userId).set({
         loginDate: new Date(),
         email: emailRef.current.value
       });
